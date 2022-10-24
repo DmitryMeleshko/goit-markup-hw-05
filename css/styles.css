@@ -50,7 +50,6 @@ body{
     margin-bottom: 0px;
 }
 .project-vue:hover{    
-    transition: transform 250ms;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .pop-up-window{
@@ -67,7 +66,7 @@ body{
     height: 294px;
     padding: 64px 24px;
     transform: translateY(140%);
-    transition: transform 250ms;
+    transition-duration: transform 250ms;
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
     font-size: 18px;
@@ -77,7 +76,6 @@ body{
     background: rgba(33, 150, 243, 0.9);
 }
 .project-vue:hover .resource-advertising{
-    transition: transform 250ms;
     transform: translate(0);
 }
 
@@ -110,6 +108,7 @@ body{
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
+    transition: 250ms;
 }
 .button:hover{
     color: #fff;
@@ -118,15 +117,13 @@ body{
     border-radius: 4px;
     cursor:pointer;
     letter-spacing: 0.03em;    
-    transition: 250ms;
 }
 .button:focus {
     color: #fff;
     background-color: var(--color-logo);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     cursor:pointer;
-    letter-spacing: 0.03em;    
-    transition: 250ms;
+    letter-spacing: 0.03em;
 }
 .header-underlines::after{
     content: "";
@@ -187,27 +184,25 @@ body{
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.02em;
+    transition-duration: 250ms;
 }
 .link-icon{
     align-content: center;
     justify-content: center;
     margin-right: 10px;
-    fill:#757575
+    fill:#757575;
+    transition-duration: 250ms;
 }
 .link:hover{    
-    transition: 250ms;
     color: var(--color-logo)
 }
 .link:hover .link-icon{
-    transition: 250ms;
     fill: var(--color-logo)
 }
 .link:focus{
-    transition: 250ms;
     color: var(--color-logo)
 }
 .link:focus .link-icon{
-    transition: 250ms;
     fill: var(--color-logo)
 }
 .header-contacts{
@@ -217,19 +212,17 @@ body{
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.02em;
+    transition-duration: 250ms;
 }
 .header-contacts:hover{
-    transition: 250ms;
     color:var(--color-logo);
     letter-spacing: 0.02em;
 }
 .header-contacts:focus{
-    transition: 250ms;
     color: var(--color-logo);
     letter-spacing: 0.02em;
 }
 .header-contacts:focus .link-icon{
-    transition: 250ms;
     fill: var(--color-logo);
 }
 .bottom{
@@ -245,6 +238,7 @@ body{
     line-height: 1.71;
     letter-spacing: 0.03em;
     letter-spacing: 0.03em;
+    transition-duration: 250ms;
 }
 .botom-list .item:last-child{
     margin-bottom: 0px;
@@ -259,15 +253,13 @@ body{
     line-height: 1.71;
     letter-spacing: 0.03em;
     letter-spacing: 0.03em;
-    transition: 250ms;
 }
 .footer-contacts:focus{
     text-decoration: none;
     color: var(--color-logo);
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;    
-    transition: 250ms;
+    letter-spacing: 0.03em;
 }
 .address{
     font-family: 'Roboto';
@@ -504,27 +496,25 @@ body{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    transition-duration: 250ms;
 }
 .soc-link:hover{
     background-color: #2196F3;    
-    transition: 250ms;
 }
 .soc-item{
     width: 20px;
     height: 20px;
     fill: #AFB1B8;
+    transition-duration: 250ms;
 }
 .soc-link:hover .soc-item{
     fill: #ffffff;
-    transition: 250ms;
 }
 .soc-link:focus .soc-item{
     fill: #ffffff;
-    transition: 250ms;
 }
 .soc-link:focus{
     background-color: #2196F3;
-    transition: 250ms;
 }
 
 .address{
@@ -564,22 +554,19 @@ body{
 }
 .customers-logo{
     fill: #AFB1B8;
+    transition-duration: 250ms;
 }
 .customers-link:hover{
     border-color: var(--color-logo);
-    transition: 250ms;
 }
 .customers-link:focus{
     border-color: var(--color-logo);
-    transition: 250ms;
 }
 .customers-link:hover .customers-logo{
     fill: var(--color-logo);
-    transition: 250ms;
 }
 .customers-link:focus .customers-logo{
     fill: var(--color-logo);
-    transition: 250ms;
 }
 
 .invitation-area{
@@ -615,7 +602,8 @@ body{
     width: 100%;
     height: 100%;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.2);;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition-duration: 250ms;
 }
 
 .modal{
